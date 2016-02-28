@@ -1,0 +1,97 @@
+body {
+	width: 540px;
+	margin: auto;
+	font-family: 'Patrick Hand', sans-serif;
+	background: #666;
+	color: #666;
+
+}
+
+article {
+	margin: 50px auto;
+	padding: 20px 50px;
+	
+	position: relative;
+
+	box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+
+	background: #fcf59b;
+	background: -webkit-linear-gradient(top, #81cbbc, #fcf59b 2%);
+	background: -moz-linear-gradient(top, #81cbbc, #fcf59b 2%);
+	background: -ms-linear-gradient(top, #81cbbc, #fcf59b 2%);
+	background: -o-linear-gradient(top, #81cbbc, #fcf59b 2%);
+	background: linear-gradient(top, #81cbbc, #fcf59b 2%);
+
+	-webkit-background-size: 100% 40px;
+	background-size: 100% 40px;
+}
+
+article:focus {
+	outline: none;
+	color: #000;
+	border-radius: 0;
+}
+
+article:focus:before, article:focus:after {
+	content: none;
+}
+
+article, article:before, article:after {
+	-webkit-border-bottom-left-radius: 20px 500px;
+	-moz-border-bottom-left-radius: 20px 500px;
+	-ms-border-bottom-left-radius: 20px 500px;
+	-o-border-bottom-left-radius: 20px 500px;
+	border-bottom-left-radius: 20px 500px;
+
+	-webkit-border-bottom-right-radius: 500px 30px;
+	-moz-border-bottom-right-radius: 500px 30px;
+	-ms-border-bottom-right-radius: 500px 30px;
+	-o-border-bottom-right-radius: 500px 30px;
+	border-bottom-right-radius: 500px 30px;
+
+	-webkit-border-top-right-radius: 5px 100px;
+	-moz-border-top-right-radius: 5px 100px;
+	-ms-border-top-right-radius: 5px 100px;
+	-o-border-top-right-radius: 5px 100px;
+	border-top-right-radius: 5px 100px;
+}
+
+article:after, article:before {
+	content: ' ';
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: -1;
+	background: #f00;
+	position: absolute;
+
+}
+
+article:before {
+	background: #fcf6a7;
+	-webkit-transform: rotate(4deg);
+	-moz-transform: rotate(4deg);
+	-ms-transform: rotate(4deg);
+	-o-transform: rotate(4deg);
+	transform: rotate(4deg);
+}
+
+article:after {
+	background: #fcf7b1;
+	-webkit-transform: rotate(-4deg);
+	-moz-transform: rotate(-4deg);
+	-ms-transform: rotate(-4deg);
+	-o-transform: rotate(-4deg);
+	transform: rotate(-4deg);
+}
+
+p {
+	line-height: 2.5em;
+	margin-bottom: 40px;
+}
+
+h1 {
+	padding-top: 8px;
+	margin-bottom: -8px;
+}
